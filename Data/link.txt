@@ -1,0 +1,41 @@
+Name : COVID-19 Tracking Germany
+Licence : Public (Gov)
+Dataset link : https://www.kaggle.com/datasets/headsortails/covid19-tracking-germany
+
+Metadata: 
+Column Description
+
+COVID-19 dataset covid_de.csv:
+
+    state: Name of the German federal state. Germany has 16 federal states. I removed converted special characters from the original data.
+
+    county: The name of the German Landkreis (LK) or Stadtkreis (SK), which correspond roughly to US counties.
+
+    age_group: The COVID-19 data is being reported for 6 age groups: 0-4, 5-14, 15-34, 35-59, 60-79, and above 80 years old. As a shortcut the last category I'm using "80-99", but there might well be persons above 99 years old in this dataset. This column has a few NA entries.
+
+    gender: Reported as male (M) or female (F). This column has a few NA entries.
+
+    date: The calendar date of when a case or death were reported. There might be delays that will be corrected by retroactively assigning cases to earlier dates.
+
+    cases: COVID-19 cases that have been confirmed through laboratory work. This and the following 2 columns are counts per day, not cumulative counts.
+
+    deaths: COVID-19 related deaths.
+
+    recovered: Recovered cases.
+
+Demographic dataset demographics_de.csv:
+
+    state, gender, age_group: same as above. The demographic data is available in higher age resolution, but I have binned it here to match the corresponding age groups in the covid_de.csv file.
+
+    population: Population counts for the respective categories. These numbers reflect the (most recent available) estimates on 2018-12-31.
+
+Vaccination progress dataset covid_de_vaccines.csv:
+
+    date: calendar date of vaccination
+
+    doses, doses_first, doses_second: Daily count of administered doses: total, 1st shot, 2nd shot.
+
+    pfizer_cumul, moderna_cumul, astrazeneca_cumul: Daily cumulative number of administered vaccinations by manufacturer.
+
+    persons_first_cumul, persons_full_cumul: Daily cumulative number of people having received their 1st shot and full vaccination, respectively.
+
