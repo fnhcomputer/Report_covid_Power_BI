@@ -1,5 +1,5 @@
 COVID-19 Tracking Germany  Data dashboard with  Power_BI
-# Power Bi dashboard for OVID-19 Tracking Germany dataset
+# Power Bi dashboard for COVID-19 Tracking Germany dataset
 
 
 Meta Data
